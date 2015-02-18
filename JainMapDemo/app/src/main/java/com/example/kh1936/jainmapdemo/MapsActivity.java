@@ -36,8 +36,7 @@ public class MapsActivity extends FragmentActivity implements LocationListener{
     }
     @Override
     public void onLocationChanged(Location location) {
-        mMap.addMarker(new MarkerOptions().position(new LatLng(location.getLatitude(),location.getLongitude() )).title("my location"));
-
+        mMap.addMarker(new MarkerOptions().position(new LatLng(location.getLatitude(),location.getLongitude() )).title("Latitude:"+location.getLatitude()+",Longitude:"+location.getLongitude()));
     }
 
     @Override
